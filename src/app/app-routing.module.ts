@@ -38,7 +38,11 @@ const routes: Routes = [
   {
     path: '**',
     loadChildren: () => import('./page/e404/e404.module').then( m => m.E404PageModule)
+  },  {
+    path: 'faq',
+    loadChildren: () => import('./database/faq/faq.module').then( m => m.FaqPageModule)
   },
+
 
 ];
 
